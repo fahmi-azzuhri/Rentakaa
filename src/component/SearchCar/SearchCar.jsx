@@ -49,10 +49,10 @@ const SearchCar = () => {
   return (
     <>
       <Top />
-      <Container style={{ position: "relative", zIndex: "2", top: "-150px" }}>
+      <Container style={{ position: "relative", zIndex: "2", top: "-130px" }}>
         <Card>
           <Row className="d-flex px-5 py-3">
-            <Col sm={6}>
+            <Col sm={6} lg={3}>
               <div className="flex-column me-4">
                 <p>Tipe Driver</p>
                 <Form.Group controlId="typeDriver">
@@ -65,7 +65,7 @@ const SearchCar = () => {
                 </Form.Group>
               </div>
             </Col>
-            <Col sm={6}>
+            <Col sm={6} lg={3}>
               <div className="flex-column me-4">
                 <p>Tanggal</p>
                 <DatePicker
@@ -78,7 +78,7 @@ const SearchCar = () => {
               </div>
             </Col>
 
-            <Col sm={6}>
+            <Col sm={6} lg={3}>
               <div className="flex-column me-4 pt-2">
                 <p>Waktu Jemput/Ambil</p>
                 <Form.Group controlId="timePickup">
@@ -91,7 +91,7 @@ const SearchCar = () => {
                 </Form.Group>
               </div>
             </Col>
-            <Col sm={6}>
+            <Col sm={6} lg={3}>
               <div className="flex-column me-4 pt-2">
                 <p>Jumlah Penumpang</p>
                 <Form.Group controlId="passenger">
