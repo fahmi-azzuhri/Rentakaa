@@ -15,10 +15,6 @@ const SearchCar = () => {
     setSelectedDate(date);
   };
 
-  useEffect(() => {
-    setShowModal(true);
-  }, []);
-
   const handleCloseModal = () => {
     setShowModal(false);
   };

@@ -1,11 +1,13 @@
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import img_logo from "../../assets/img/img_logo.png";
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
+  const navigate = useNavigate();
   return (
     <Navbar collapseOnSelect expand="lg md" className="bg-navbar">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand onClick={() => navigate("/")}>
           <img src={img_logo} alt="" className="w-logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
