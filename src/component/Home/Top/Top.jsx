@@ -5,7 +5,7 @@ import img_car from "../../../assets/img/img_car.png";
 const Top = () => {
   return (
     <>
-      <Col lg={6} sm={12} className="ps-5">
+      <Col lg={6} sm={12} className="ps-4">
         <div className="mt-5 ">
           <h2>Sewa dan Rental Mobil Terbaik di Bekasi</h2>
           <span>
