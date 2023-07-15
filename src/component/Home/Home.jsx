@@ -5,13 +5,12 @@ import Service from "./Service/Service";
 import Whyus from "./Whyus/Whyus";
 import Testimonial from "./Testimonial/Testimonial";
 import Faq from "./Faq/Faq";
+import Footer from "../Footer/Footer";
 
 const Jumbotron = () => {
   return (
     <>
-      <Row className="bg-top mb-5">
-        <Top />
-      </Row>
+      <Top />
       <Container>
         <Row>
           <Service />
@@ -19,6 +18,7 @@ const Jumbotron = () => {
           <Testimonial />
           <Faq />
         </Row>
+        <Footer />
       </Container>
     </>
   );
