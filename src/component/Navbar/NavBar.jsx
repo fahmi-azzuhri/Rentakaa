@@ -1,10 +1,13 @@
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
+import img_logo from "../../assets/img/img_logo.png";
 
 const NavBar = () => {
   return (
     <Navbar collapseOnSelect expand="lg md" className="bg-navbar">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <img src={img_logo} alt="" className="w-logo" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>

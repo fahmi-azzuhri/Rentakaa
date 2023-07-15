@@ -5,7 +5,7 @@ import FaqAccordion from "./FaqAccordion";
 const Faq = () => {
   return (
     <>
-      <Row>
+      <Row className="mb-5">
         <Col lg={4} sm={12}>
           <h5 className="fw-bold pb-2">Pertanyaan yang sering diajukan</h5>
           <span>
