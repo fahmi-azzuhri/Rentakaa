@@ -13,3 +13,8 @@
 .bg-testi {
   background: rgba(241, 243, 255, 1);
 }
+@media only screen and (max-width: 600px) {
+  .w-form {
+    width: 19.2rem;
+  }
+}

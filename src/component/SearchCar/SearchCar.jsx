@@ -51,9 +51,9 @@ const SearchCar = () => {
       <Top />
       <Container style={{ position: "relative", zIndex: "2", top: "-130px" }}>
         <Card>
-          <Row className="d-flex px-5 py-3">
+          <Row className="d-flex px-3 py-3">
             <Col sm={6} lg={3}>
-              <div className="flex-column me-4">
+              <div className="flex-column me-4 pt-2">
                 <p>Tipe Driver</p>
                 <Form.Group controlId="typeDriver">
                   <Form.Control as="select">
@@ -66,10 +66,10 @@ const SearchCar = () => {
               </div>
             </Col>
             <Col sm={6} lg={3}>
-              <div className="flex-column me-4">
+              <div className="flex-column me-4 pt-2">
                 <p>Tanggal</p>
                 <DatePicker
-                  className="form-control"
+                  className="form-control w-form"
                   selected={selectedDate}
                   onChange={handleDateChange}
                   dateFormat="yyyy-MM-dd"
