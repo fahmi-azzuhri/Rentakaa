@@ -1,0 +1,9 @@
+.bg-top {
+  background: rgba(241, 243, 255, 1);
+}
+.bg-success:hover {
+  opacity: 0.5;
+}
+.bg-navbar {
+  background: rgba(241, 243, 255, 1);
+}

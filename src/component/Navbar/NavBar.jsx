@@ -1,23 +1,24 @@
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
-import "./NavBar.css";
 
-function NavBar() {
+const NavBar = () => {
   return (
-    <>
-      <Navbar bg="light" data-bs-theme="light">
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="">
-            <Nav.Link href="#home">Our Services</Nav.Link>
-            <Nav.Link href="#features">Why Us</Nav.Link>
-            <Nav.Link href="#pricing">Testimonial</Nav.Link>
+    <Navbar collapseOnSelect expand="lg md" className="bg-navbar">
+      <Container>
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto"></Nav>
+          <Nav>
+            <Nav.Link href="#ourservices">Our Services</Nav.Link>
+            <Nav.Link href="#whyus">Why Us</Nav.Link>
+            <Nav.Link href="#testimonial">Testimonial</Nav.Link>
             <Nav.Link href="#faq">FAQ</Nav.Link>
-            <Button className="bg-success">Register</Button>
           </Nav>
-        </Container>
-      </Navbar>
-    </>
+          <Button className="bg-success">Register</Button>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
-}
+};
 
 export default NavBar;
