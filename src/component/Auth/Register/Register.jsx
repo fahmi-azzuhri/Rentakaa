@@ -16,14 +16,19 @@ const Register = () => {
             onClick={() => navigate("/")}
           />
           <h3 className="fw-bold mb-4">Daftarkan dirimu segera!</h3>
-
-          <Form.Group controlId="formLoginEmail" className="mb-4">
+          <Form.Group controlId="formRegisterUsername" className="mb-4">
+            <Form.Label>Nama Lengkap</Form.Label>
+            <Form.Control
+              type="name"
+              placeholder="masukkan nama lengkap"></Form.Control>
+          </Form.Group>
+          <Form.Group controlId="formRegisterEmail" className="mb-4">
             <Form.Label>Email</Form.Label>
             <Form.Control
               type="email"
               placeholder="masukkan email"></Form.Control>
           </Form.Group>
-          <Form.Group controlId="formLoginPassword" className="mb-4">
+          <Form.Group controlId="formRegisterPassword" className="mb-4">
             <Form.Label>Kata Sandi</Form.Label>
             <Form.Control
               type="password"
