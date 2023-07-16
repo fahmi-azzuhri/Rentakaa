@@ -8,7 +8,7 @@ const NavBar = () => {
     <Navbar collapseOnSelect expand="lg md" className="bg-navbar">
       <Container>
         <Navbar.Brand onClick={() => navigate("/")}>
-          <img src={img_logo} alt="" className="w-logo" />
+          <img src={img_logo} alt="" className="w-logo cursor-pointer" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -19,7 +19,9 @@ const NavBar = () => {
             <Nav.Link href="#testimonial">Testimonial</Nav.Link>
             <Nav.Link href="#faq">FAQ</Nav.Link>
           </Nav>
-          <Button className="bg-success">Register</Button>
+          <Button className="bg-success" onClick={() => navigate("/login")}>
+            Masuk
+          </Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
